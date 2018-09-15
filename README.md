@@ -1,6 +1,11 @@
 # Introduction
 A demonstration of Memory game using React.
 
+# Screen shots
+<img src="https://i.imgur.com/a03jHru.png" width="600px">
+<img src="https://i.imgur.com/7o6hWpi.png" width="600px">
+<img src="https://i.imgur.com/IB0cSPb.png" width="600px">
+
 ## Rules
 The Rules of the memory game itself:
 - The cards should be laid out in a grid
