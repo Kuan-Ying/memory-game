@@ -33,7 +33,7 @@ const DIFFICULTY_TO_CARD_NUM = [18, 24, 30]; // NOTE: convert difficulty to card
 const initializeCards = (cardPairNums) => {
   const cards = _.range(1, 2 * cardPairNums + 1)
     .map(num => ({ num: Math.round(num / 2), status: cardStatus.HIDDEN }));
-  // shuffle(cards);
+  shuffle(cards);
   return cards;
 };
 
