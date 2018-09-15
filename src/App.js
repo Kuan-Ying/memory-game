@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+import GameBoard from './components/GameBoard';
 
-class App extends Component {
+export default class App extends React.Component {
   render() {
     return (
-      <div>init</div>
+      <GameBoard />
     );
   }
 }
-
-export default App;
