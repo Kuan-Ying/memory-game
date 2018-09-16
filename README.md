@@ -4,10 +4,13 @@ A demonstration of Memory game using React.
 # Screen shots
 ## Start a new game
 <img src="https://i.imgur.com/a03jHru.png" width="600px">
+
 ## Selecting cards
 <img src="https://i.imgur.com/7o6hWpi.png" width="600px">
+
 ## Pause
 <img src="https://i.imgur.com/IB0cSPb.png" width="600px">
+
 ## Game Report
 <img src="https://i.imgur.com/AOmHah2.png" width="600px">
 
