@@ -176,6 +176,20 @@ export default class GameBoard extends React.Component {
     });
   }
 
+  pauseHandler = () => {
+    const { interval } = this.state;
+    clearInterval(interval);
+    this.setState({ playState: playStatus.PAUSED });
+  }
+
+  continueHandler = () => {
+    const interval = setInterval(this.timer, 1000);
+    this.setState({
+      playState: playStatus.PLAYING,
+      interval,
+    });
+  }
+
   resetHandler = () => {
     const { interval } = this.state;
     clearInterval(interval);
@@ -224,12 +238,12 @@ export default class GameBoard extends React.Component {
         <StatusBar
           scores={scores}
           currentPlayer={currentPlayer}
-          onPause={() => this.setState({ playState: playStatus.PAUSED })}
+          onPause={this.pauseHandler}
           gameTime={gameTime}
         />
         <PauseModal
           active={playState === playStatus.PAUSED}
-          onContinue={() => this.setState({ playState: playStatus.PLAYING })}
+          onContinue={this.continueHandler}
           onReset={this.resetHandler}
         />
         <FinishedModal
